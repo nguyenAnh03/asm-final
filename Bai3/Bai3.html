@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Tuấn Anh</title>
+    <link rel="stylesheet" href="Bai3.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bao">
+            <div class="tile">Quản lí bán hàng</div>
+            <select id="loaihang" onchange="doiloaihang()">
+                <option value="all">Chọn Loại Hàng</option>
+                <option value="lt">Laptop</option>
+                <option value="dt">Điện thoại</option>
+                <option value="tn">Phụ Kiện</option>
+            </select>
+            <select id="mucgia" onchange="doimucgia()">
+                <option value="-1">Chọn Mức Giá</option>
+                <option value="200">Đến 200</option>
+                <option value="400">Đến 400</option>
+                <option value="600">Đến 600</option>
+                <option value="800">Đến 800</option>
+                <option value="1000">Đến 1000</option>
+                <option value="1200">Đến 1200</option>
+                <option value="1800">Đến 1800</option>
+                <option value="2200">Đến 2200</option>
+                <option value="2800">Đến 2800</option>
+                <option value="3000">Đến 3000</option>
+
+            </select>
+        </div>
+        
+        
+        <table id="tablesp">
+            <tr class="title-scoll">
+                <th colspan="2">Hàng Hóa</th>
+                <th>Đơn Giá</th>
+                <th>Số Lượng</th>
+                <th class="thanhtien">Thành tiền</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(0)"></td>
+                <td name="loai" value="dt"><img src="IMG/0.jpg"> Iphone 11</td>
+                <td name="gia">700</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(1)"></td>
+                <td name="loai" value="dt"><img src="IMG/1.jpg" ></span> Iphone 12</td>
+                <td name="gia">400</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(2)"></td>
+                <td name="loai" value="dt"><img src="IMG/2.jpg" alt=""> SamSung</td>
+                <td name="gia">100</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(3)"></td>
+                <td name="loai" value="dt"><img src="IMG/3.jpg" alt=""> Nokia</td>
+                <td name="gia">50</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(4)"></td>
+                <td name="loai" value="dt"><img src="IMG/4.jpg" alt=""> Oppo</td>
+                <td name="gia">600</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(5)"></td>
+                <td name="loai" value="dt"><img src="IMG/5.jpg" alt=""> Motorola</td>
+                <td name="gia">300</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(6)"></td>
+                <td name="loai" value="dt"><img src="IMG/6.jpg" alt=""> Vivo</td>
+                <td name="gia">900</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+
+            <!-- laptop -->
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(7)"></td>
+                <td name="loai" value="lt" class="lap"><img  src="IMG/7.jpg" alt=""> Laptop Dell 250GB</td>
+                <td name="gia">1900</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(8)"></td>
+                <td name="loai" value="lt" class="lap"><img src="IMG/8.jpg" alt=""> Laptop Acer</td>
+                <td name="gia">1300</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(9)"></td>
+                <td name="loai" value="lt" class="lap"><img src="IMG/9.jpg" alt=""> Laptop HP 500GB</td>
+                <td name="gia">2900</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(10)"></td>
+                <td name="loai" value="lt" class="lap"><img src="IMG/10.jpg" alt=""> Laptop Asus Full HD</td>
+                <td name="gia">2000</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(11)"></td>
+                <td name="loai" value="lt" class="lap"><img src="IMG/11.jpg" alt=""> Laptop Tosiba</td>
+                <td name="gia">1000</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(12)"></td>
+                <td name="loai" value="lt" class="lap"><img src="IMG/12.jpg" alt=""> Laptop Lenovo HDD 100GB</td>
+                <td name="gia">990</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(13)"></td>
+                <td name="loai" value="lt" class="lap"><img src="IMG/13.jpg" alt=""> Laptop Samsumg</td>
+                <td name="gia">2100</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <!-- tainghe -->
+            
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(14)"></td>
+                
+                <td name="loai" value="tn" class="lap"> 
+                    <img src="https://cdn.tgdd.vn/Products/Images/54/228893/bluetooth-tws-lg-tone-free-hbs-fn4-den-thumb-600x600.jpg" alt="">
+                    Tai nghe Bluetooth True Wireless</td>
+                <td name="gia">2700</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(15)"></td>
+                
+                <td name="loai" value="tn" class="lap"> 
+                <img src="https://cdn.tgdd.vn/Products/Images/57/266165/pin-sac-10000mah-type-c-pd-qc30-20w-hydrus-pb299s-thumb-600x600.jpeg" alt="">
+                 Pin sạc dự phòng 10000mAh</td>
+                <td name="gia">750</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="chon" onclick="tichcheckbox(16)"></td>
+                
+                <td name="loai" value="tn" class="lap"> 
+                    <img src="https://cdn.tgdd.vn/Products/Images/57/240696/ava-lj-jp199-ava-600x600.jpg" alt="">
+                    Pin sạc dự phòng 7500 mAh</td>
+                <td name="gia">175</td>
+                <td class="sl"> <input value="0" name="soluong" type="number" min="0" disabled onkeyup="thanhtien(this)" onchange="thanhtien(this)"></td>
+                <td name="thanhtien"></td>
+            </tr>
+            
+            <tr class="tong">
+                <td class="tongtien" colspan="4">Tổng</td>
+                <td id="tongtien"></td>
+            </tr>
+        </table>
+        <div id="trongloi">
+            
+        </div>
+        
+        <script src="Bai3.js"></script>
+    </div>
+</body>
+</html>

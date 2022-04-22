@@ -1,0 +1,194 @@
+body{
+    
+    background-image: url("https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.container {
+    width: 900px;
+    /* height: 618px; */
+    margin: 0 auto;
+    background-color: cadetblue;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    /* overflow-y: scroll; */
+}
+
+.tile {
+    font-weight: bold;
+    font-size: 22px;
+    color: yellow;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #333;
+    text-transform: uppercase;
+    border-radius: 5px;
+    /* z-index: 1;
+    position: sticky;
+    top: 0px; */
+}
+select {
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: purple;
+    cursor: pointer;
+    background-color: white;
+    /* z-index: 1;
+    position: sticky;
+    top: 47px; */
+}
+th{
+    width: 10px;
+}
+/* .bao{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: cadetblue;
+}
+.title-scoll{
+    position: sticky;
+    top: 88px;
+    border: 1px solid burlywood; */
+/* } */
+option {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+    margin-top: 10px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+th,
+td {
+    border: 1px solid burlywood;
+    padding: 10px;
+}
+
+input {
+    /* width: 100%;
+    height: 100%; */
+    border: 1px solid rgb(223, 197, 197);
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+th {
+    background-color: antiquewhite;
+    text-transform: uppercase;
+}
+
+td {
+    line-height: 40px;
+}
+.lap{
+    line-height: 20px;
+}
+.sl {
+    text-align: center;
+}
+
+.sl input {
+    padding-left: 20px;
+}
+
+.tongtien {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 5px;
+    color: rgb(218, 96, 96);
+}
+
+#tongtien {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px;
+}
+
+.thanhtien {
+    width: 200px;
+}
+
+img {
+    width: 35px;
+    float: left;
+    border-radius: 5px;
+}
+#trongloi{
+    position: fixed;
+    top: 0px;
+    width: 900px;
+    height: 100vh;
+    z-index: -1;
+    text-align: center;
+}
+#nen{
+    position: fixed;
+    top: 0px;
+    width: 900px;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.829);
+}
+.trongloi{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    width: 400px;
+    text-align: center;
+}
+#trongloi #trong{
+    position: absolute;
+    top: 10vw;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.829);
+    height: 50vh;
+    line-height: 50vh;
+}
+em{
+    position: absolute;
+    top: 25vw;
+    left: 350px;
+}
+#btn{
+    position: absolute;
+    top: 130px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(10, 1, 41);
+    color: yellow;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.4;
+}
+#btn:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.4s;
+}

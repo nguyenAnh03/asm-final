@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-image: url("IMG/backdrop-g4cc3ef067_1280.jpg");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container1 {
+    background-color: rgb(1, 1, 36);
+    width: 100%;
+}
+
+.container img {
+    position: absolute;
+    top: -100px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 230px;
+}
+
+#header {
+    background-color: rgb(1, 1, 36);
+    text-align: center;
+    text-shadow: 2px 2px 10px yellow;
+    padding: 10px 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.traloicauhoi {
+    width: 700px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    padding: 30px;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* .traloicauhoi div{
+    padding: 0 20px;
+    width: 100%;
+} */
+.traloicauhoi li {
+    width: 100%;
+}
+
+.traloicauhoi .tie {
+    font-weight: bold;
+    padding: 0px;
+    color: darkblue;
+}
+
+.traloicauhoi>div>div {
+    text-align: center;
+}
+
+.traloicauhoi>div>div>div {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.traloicauhoi img {
+    width: 400px;
+}
+
+.xemthem {
+    border: none;
+    background: none;
+    color: blue;
+}
+
+.xemthem:hover {
+    text-decoration: underline salmon;
+    /* transition: 1s ease-in; */
+}
+
+.chuyentab {
+    padding-top: 190px;
+    padding-bottom: 350px;
+    height: 500px;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    color: white;
+}
+
+.chuyentab>hr {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    width: 90%;
+
+}
+
+
+.chuyentab h1 {
+    font-weight: bolder;
+}
+
+.chuyentab i {
+    cursor: pointer;
+}
+
+.chuyentab i:hover {
+    color: yellow;
+}
+
+.baihoc {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 430px 430px;
+    grid-template-columns: 320px 320px 320px 320px;
+    grid-gap: 20px;
+    grid-auto-rows: 50px;
+}
+
+.bai {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bai img {
+    width: 260px;
+    height: 170px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.bai:hover img {
+    transform: translateY(-15px);
+    transition: 1s;
+}
+
+.bai:hover {
+    background-color: #FAFDD6;
+}
+
+.menu>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li ul li {
+    padding: 10px 0px;
+}
+
+.menu ul li ul {
+    box-shadow: 0px 0px 1px rgb(0 0 0 / 20%);
+}
+
+.menu>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+.menu>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu ul ul {
+    display: none;
+    text-align: left;
+    position: absolute;
+    left: 05px;
+    top: 100%;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    min-width: 250px;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.menu ul ul a {
+    display: block;
+    line-height: 30px;
+    color: #111;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.menu>ul>li:hover>ul {
+    display: block;
+    z-index: 1;
+}
+
+img:hover ul {
+    display: block;
+}
+
+.menu ul li {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.menu>ul>li {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu ul ul a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.menu>ul>li>ul>li:hover {
+    background-color: rgb(66, 104, 138);
+    border-bottom: 1px solid rgba(143, 141, 141, 0.445);
+    transition: 1s;
+
+}
+
+.demobaihoc {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: auto;
+    background-color: azure;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.demobaihoc img {
+    width: 800px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 80px;
+}
+
+.demobaihoc h3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.demobaihoc h3 a {
+    text-decoration: none;
+}
+
+#dilen {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    font-size: 50px;
+    transform: rotate(90deg);
+    opacity: 0.3;
+    text-shadow: 0px 0px 10px rgb(4, 2, 90);
+}
+#dilen:hover{
+    transform: translateY(-20px);
+    /* transform: rotate(90deg); */
+}
+
+/*Thanh scroll*/
+body::-webkit-scrollbar {
+    width: 14px;
+    /* Chiều rộng vùng chứa scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #333;
+    /* Màu nền ngoài của thanh scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 10px;
+    /* Bo góc scroll thumb */
+    border: none;
+    /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #ff8000;
+    /* Hiệu ứng di chuột đổi màu*/
+}
+
+body {
+    /*cho Firefox*/
+    scrollbar-width: thin;
+    /* "auto" hoặc "thin" */
+    scrollbar-color: orange #ccc;
+    /* scroll thumb and track */
+}
+
+/* Thong bao Popup  */
+.noidung1 {
+    height: 500px;
+    overflow: hidden;
+    padding: 20px;
+}
+.noidung1::-webkit-scrollbar {
+    width: 14px;
+    /* Chiều rộng vùng chứa scrollbar */
+}
+
+.noidung1::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Màu nền ngoài của thanh scrollbar */
+}
+
+.noidung1::-webkit-scrollbar-thumb {
+    background-color: #b4ee99;
+    /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 5px;
+    /* Bo góc scroll thumb */
+    border: none;
+    /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
+}
+
+.noidung1::-webkit-scrollbar-thumb:hover {
+    background-color: #ff8000;
+    /* Hiệu ứng di chuột đổi màu*/
+}
+
+.noidung1 {
+    /*cho Firefox*/
+    scrollbar-width: thin;
+    /* "auto" hoặc "thin" */
+    scrollbar-color: orange #ccc;
+    /* scroll thumb and track */
+}
+.button{
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: #FAFDD6;
+    border: 1px solid #333;
+}
+.button:hover{
+    color: #333;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #333;
+}
+.tbpopup .tboverlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.tbpopup .tbcontent {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 800px;
+    z-index: 2;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0px 0px 10px #111;
+}
+
+.tbcontent p img {
+    width: 700px;
+    margin: 10px 10px;
+}
+.tbcontent p {
+    text-align: justify;
+    overflow-y: scroll;
+}
+.tbcontent code{
+    text-align: left;
+    font-size: 20px;
+    color: blue;
+}
+.tbpopup .tbclose-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    color: #ff4444;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+}
+.tbpopup .tbclose-btn:hover{
+    transform: rotate(180deg);
+    transition: 1s;
+}
+.tbpopup.active .tboverlay {
+    display: block;
+}
+
+.tbpopup.active .tbcontent {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+    
+}
+
+.tbbuttom {
+    background: #00cc00;
+    color: #fff
+}

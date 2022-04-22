@@ -1,0 +1,88 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: url("https://images8.alphacoders.com/499/thumb-1920-499324.jpg");
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+form{
+    background-color: white;
+    padding: 40px 50px !important;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+legend{
+    width: auto;
+    padding: 0 10px; 
+    font-size: 20px;
+    font-weight: bold;
+}
+em{
+    font-weight: bold !important;
+}
+h1{
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-group>label{
+    font-size: 20px;
+    font-weight: bold;
+}
+label{
+    margin: 0 15px !important;
+}
+.greeting-root{
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+}
+.weatherwidget-io{
+    width: 100px;
+    opacity: 1;
+}
+#weather:hover{
+    height: 100vh !important;
+    opacity: 1 !important;
+    transition: 3s;
+}
+.ketquathongbao{
+    position: fixed;
+    top: 12px;
+    left: 25%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-shadow: 2px 2px 10px yellow;
+    width: 50%;
+    height: 100px;
+    background-color: rgba(51, 51, 51, 0.952);
+    color: white;
+    line-height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.tatdi{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 10px;
+    opacity: 0.5;
+}
+.tatdi:hover{
+    color: yellow;
+    opacity: 1;
+    background-color: #333;
+    transition: all 40ms linear;
+}

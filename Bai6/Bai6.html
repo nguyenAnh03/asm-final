@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Tuấn Anh - Assignment Final</title>
+    <link rel="stylesheet" href="Bai6.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/Bai5/aos-master/aos-master/dist/aos.js"></script>
+    <link rel="stylesheet" href="/Bai5/aos-master/aos-master/dist/aos.css">
+
+
+</head>
+
+<body>
+    <div id="header" class="container-fluid" data-aos="fade-down" data-aos-duration="1500">
+        <div>Assignment Final - PS24619 Nguyễn Tuấn Anh</div>
+    </div>
+    <div class="container1" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container-fluid" overflow: hidden;">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active" style="height: 279.062px; ">
+                        <img src="IMG/Banner-AP.png" alt="image-1"
+                            style="width:100%; overflow: hidden; position: absolute; top: -80px;">
+                    </div>
+                    <div class="item" style="height: 279.062px;">
+                        <img src="IMG/Trắc-nghiệm-nghề-nghiệp-1.jpg" alt="image-2"
+                            style="width:100%; position: absolute; top: -80px;">
+                    </div>
+                    <div class="item" style="height: 279.062px;">
+                        <img src="IMG/cp17309.jpg" alt="image-3"
+                            style="width:100%;  overflow: hidden; position: absolute; top: -380px; object-fit: cover;">
+
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="traloicauhoi" data-aos="flip-left" data-aos-duration="1000" id="traloi">
+        <h3 data-aos="fade-up" data-aos-duration="2000" style="font-weight: bold;">TRẢ LỜI CÂU HỎI</h3> <br>
+        <div class="tie" data-aos="fade-up" data-aos-duration="2000">1. Javascript giúp bạn làm gì?</div>
+        <div data-aos="fade-up" data-aos-duration="2000">
+            Cùng với HTML và CSS, JavaScript là công cụ giúp phát triển và thiết kế giao diện trang web một cách dễ
+            dàng, thú vị hơn.
+            Những thứ mà bạn thường thấy trên trang web như: hình động, menu, trình phát video, trò chơi, bản đồ… đều
+            được tạo ra từ JavaScript.
+            <br>
+        </div>
+        <input data-aos="fade-up" type="button" value="Xem thêm" class="xemthem" name="xemthem"
+        onclick="thongbaopopup1()">
+        <br> <br> <br>
+        <div class="tie" data-aos="fade-left">2. Lệnh setTimeout giúp bạn làm gì?</div>
+        <div data-aos="fade-left" id="noidung2">Hàm setTimeout() dùng để thiết lập một khoảng thời gian nào đó sẽ thực
+            hiện một nhiệm vụ nào đó và nó chỉ thực hiện đúng một lần.</div>
+        <input data-aos="fade-up" type="button" value="Xem thêm" class="xemthem" name="xemthem" onclick="thongbaopopup2()">
+        <br> <br> <br>
+        <div class="tie" class="tie" data-aos="fade-right">3. Viết lệnh cần thiết để đổi màu chữ thành màu đỏ cho tất cả
+            các tag p trong trang?</div>
+        <div data-aos="fade-right" id="noidung3">
+            Dùng mô hình DOM <br>
+            var arr_p = document.getElementsByTagName('p'); <br>
+            for(let i = 0; i < arr_p.length; i++){ arr_p[i].style.color='red' ; </div>
+                <input data-aos="fade-right" type="button" value="Xem thêm" class="xemthem" name="xemthem"
+                onclick="thongbaopopup3()">
+                <br> <br> <br>
+                <div class="tie" data-aos="fade-left">4. Lệnh để hiện chữ Bé giỏi quá vào tag có id là kq thì viết thế
+                    nào?</div>
+                <div data-aos="fade-left">
+                    <ul style="text-align: left;" id="noidung4">
+                        <li><code>
+                            var strong = 'Bé giỏi quá';
+                            document.getElementById('kq').innerHTML = strong;</code>
+                        </li>
+                        <li><em><b>Có thể gán trực tiếp vào mà không cần qua biến strong</b></em>
+                            <code>document.getElementById('kq').innerHTML = 'Bé giỏi quá'; </code>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <input data-aos="fade-left" type="button" value="Xem thêm" class="xemthem" name="xemthem"
+                    onclick="xemthemnoidung(4)"> -->
+                <br>
+                <div class="tie" data-aos="fade-right">5. Thư viện AngularJS giúp gì cho bạn, ngoài AngularJS còn thư
+                    viện nào khác không?</div>
+                <div data-aos="fade-right" id="noidung5">AngularJS hoàn toàn dựa trên HTML và JavaScript,
+                    vì vậy chúng ta không cần phải học một cú pháp hoặc một ngôn ngữ nào khác.
+                    AngularJS thay đổi HTML tĩnh thành HTML động.
+                    Nó mở rộng khả năng của HTML bằng cách thêm các thuộc tính và thành phần tích hợp,
+                    cung cấp khả năng tạo các thuộc tính tùy chỉnh bằng cách sử dụng JavaScript đơn giản.
+                    Ngoài AngularJS còn có Vue.js, Ember.js,...
+                </div>
+                <input data-aos="fade-right" type="button" value="Xem thêm" class="xemthem" name="xemthem"
+                onclick="thongbaopopup5()">
+                <br>
+        </div>
+        <div class="chuyentab" id="scrolls" data-aos="fade-down">
+            <hr>
+            <h1 id="baihocjs">Scroll Down</h1> <br>
+            <i class="fa-solid fa-angles-down" id="lenxuong"></i>
+        </div>
+        <div class="baihoc">
+            <div id="quaylai" class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <div class="menu">
+                    <ul>
+                        <li> Bài 1: Giải PT Bậc 2
+                            <ul>
+                                <li><a href="#bai1">Xem Demo</a></li>
+                                <li><a href="/Bai1/phuongtrinh.html">Chạy Chương trình</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/bai1.png" alt="">
+            </div>
+            <div class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                <div class="menu">
+                    <ul>
+                        <li> Bài 2: Slide hình ảnh
+                            <ul>
+                                <li><a href="#bai2">Xem Demo</a></li>
+                                <li><a href="/Bai2/Bai2.html">Chạy chương trình</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/bai2.png" alt="">
+            </div>
+            <div class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+                <div class="menu">
+                    <ul>
+                        <li> Bài 3: Quản lí bán hàng
+                            <ul>
+                                <li><a href="#bai3">Xem Demo</a></li>
+                                <li><a href="/Bai3/Bai3.html">Chạy chương trình</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/bai3.png" alt="">
+            </div>
+            <div class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100">
+                <div class="menu">
+                    <ul>
+                        <li> Bài 4: kiểm tra form
+                            <ul>
+                                <li><a href="#bai4">Xem Demo</a></li>
+                                <li><a href="/Bai4/Bai4.html">Chạy chương trình</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/bai4.png" alt="">
+            </div>
+            <div class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+                <div class="menu">
+                    <ul>
+                        <li> Bài 5: AngularJS
+                            <ul>
+                                <li><a href="#bai5">Xem Demo</a></li>
+                                <li><a href="/Bai5/Bai5.html">Chạy chương trình</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/bai5.png" alt="">
+            </div>
+            <div class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">
+                <div class="menu">
+                    <ul>
+                        <li> Bài 6: Trả lời câu hỏi
+                            <ul>
+                                <li><a href="#bai6">Xem Demo</a></li>
+                                <li><a href="#traloi">Xem câu trả lời</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/bai6.png" alt="">
+            </div>
+            <div class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+                <div class="menu">
+                    <ul>
+                        <li> Web thầy long
+                            <ul>
+                                <li><a href="https://longnv.name.vn/">Đi tới trang</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/tk1.png" alt="">
+            </div>
+            <div class="bai" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100">
+                <div class="menu">
+                    <ul>
+                        <li> Link icon
+                            <ul>
+                                <li><a href="https://fontawesome.com/icons">Đi tới trang</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <img src="IMG/tk2.png" alt="">
+            </div>
+        </div>
+        <br><br>
+        <hr data-aos="fade-down" style="width: 90%; margin: 0 auto;">
+        <h1 data-aos="fade-down" id="bai1" style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold; color: yellow; padding-bottom: 50px;">
+            DEMO</h1>
+        <div class="demobaihoc">
+            <h3 data-aos="fade-left">Bài 1 - Giải Phương Trình</h3>
+            <h3 data-aos="fade-left"><a href="#quaylai">Quay lại</a></h3> <br>
+            <iframe data-aos="fade-left" style="width: 800px; height: 650px; border-radius: 20px;" src="/Bai1/phuongtrinh.html" frameborder="0"></iframe>
+            <h3 data-aos="fade-right" id="bai2">Bài 2 - Slide hình ảnh siêu đẹp</h3>
+            <h3 data-aos="fade-left"><a href="#quaylai">Quay lại</a></h3> <br>
+            <img data-aos="fade-right" src="IMG/bai2.png" alt="">
+            <h3 data-aos="fade-left" id="bai3">Bài 3 - Quản lý bán hàng</h3>
+            <h3 data-aos="fade-left"><a href="#quaylai">Quay lại</a></h3> <br>
+            <img data-aos="fade-left" src="IMG/bai3.png" alt="">
+            <h3 data-aos="fade-right" id="bai4">Bài 4 - Kiểm tra form bằng JavaScript</h3>
+            <h3 data-aos="fade-left"><a href="#quaylai">Quay lại</a></h3> <br>
+            <img data-aos="fade-right" src="IMG/bai4.png" alt="">
+            <h3 data-aos="fade-left" id="bai5">Bài 5 - Kiểm tra form bằng AngularJS</h3>
+            <h3 data-aos="fade-left"><a href="#quaylai">Quay lại</a></h3> <br>
+            <img data-aos="fade-left" src="IMG/bai5.png" alt="">
+            <h3 data-aos="fade-right" id="bai6">Bài 6 - Trả lời câu hỏi</h3>
+            <h3 data-aos="fade-left"><a href="#quaylai">Quay lại</a></h3>
+            <img data-aos="fade-right" src="IMG/bai6.png" alt="">
+        </div>
+        <i id="dilen" onclick="baihoc()" class="fa-solid fa-circle-chevron-left"></i>
+        <!-- Thong bao pupup -->
+<div class="tbpopup" id="tbpopup-1">
+            <div class="tboverlay"></div>
+            <div class="tbcontent">
+                <div class="tbclose-btn" onclick="thongbaopopup1()">&times;</div>
+                <div style="font-size:30px;font-weight:bold">JavaScript giúp bạn gì?</div>
+                <p data-aos="fade-up" data-aos-duration="2000" class="noidung1">
+                    Cùng với HTML và CSS, JavaScript là công cụ giúp phát triển và thiết kế giao diện trang web một cách
+                    dễ dàng, thú vị
+                    hơn.
+                    Những thứ mà bạn thường thấy trên trang web như: hình động, menu, trình phát video, trò chơi, bản
+                    đồ… đều được tạo
+                    ra từ JavaScript.
+                    <br>
+                    <img src="IMG/javascript-de-lam-gi-chuc-nang-thong-dung-cua-javascript.png" alt="">
+                    <br>
+                    JavaScript cho phép bạn lấy các yếu tố web thông thường và làm cho chúng mang tính tương tác.
+                    Nó có thể được sử dụng cùng với HTML và CSS và là một công cụ cực kỳ quan trọng đối với bất kỳ
+                    nhà phát triển
+                    web nào.
+                    Để hoàn thành ví dụ trên,
+                    code JavaScript sẽ được sử dụng để làm cho nút đăng nhập
+                    của bạn thực hiện các hành động bắt buộc (đăng nhập người dùng khi nhấp vào).
+                    <br>
+                    Mặc dù JavaScript thường được nói đến như một ngôn ngữ được thiết kế chủ yếu để phát triển web
+                    front-end - và
+                    thực tế,
+                    đó là điều tôi tập trung cho đến giờ - câu trả lời cho 'JavaScript dùng để làm gì?' không hề đơn
+                    giản. Cùng với
+                    các yếu tố web tương tác,
+                    kiến thức vững chắc về JavaScript sẽ cho phép bạn tạo ra những điều dưới đây: Trò chơi, Ứng dụng
+                    di động, Ứng
+                    dụng web và máy chủ,...
+                </p>
+        </div>
+</div>
+<div class="tbpopup" id="tbpopup-2">
+        <div class="tboverlay"></div>
+        <div class="tbcontent">
+            <div class="tbclose-btn" onclick="thongbaopopup2()">&times;</div>
+            <div style="font-size:30px;font-weight:bold">Câu Lệnh SetTimeout</div>
+            <p data-aos="fade-up" data-aos-duration="2000" class="noidung1">
+                Phương thức <b>setTimeout()</b> dùng để thiết lập một hàm nào đó  sẽ được thực thi  sau một khoảng thời gian xác định.
+                Ví dụ, khi người dùng <button onclick="demo1()">Click vào nút này</button> thì phương thức alert("Hello") sẽ được thực thi sau 3 giây.
+                <br>
+                <img src="IMG/demo1.png" alt="">
+                <br>
+                <img src="IMG/demo1_2.png" alt="">
+                <button onclick="demo1()" class="button">Xem ví dụ</button>
+            </p>
+    </div>
+</div>
+<div class="tbpopup" id="tbpopup-3">
+    <div class="tboverlay"></div>
+    <div class="tbcontent">
+        <div class="tbclose-btn" onclick="thongbaopopup3()">&times;</div>
+        <div style="font-size:30px;font-weight:bold">Viết lệnh đổi màu chữ thành màu đỏ <br> cho tất cả các tag p trong trang</div>
+        <p data-aos="fade-up" data-aos-duration="2000" class="noidung1">
+            Cú pháp <br> <br>
+            <code>
+                object.style.color
+            </code> <br> <br>
+            Thay đổi màu <br> <br>
+            <code>
+                object.style.color = "color|initial|inherit"
+            </code> <br> <br>
+            Câu lệnh
+            <br> <br>
+            <code>
+                var<var> arr_p</var> = document.getElementsByTagName('p'); <br>
+                for(let i = 0; i < arr_p.length; i++){<br>
+                    &emsp; &emsp; &emsp; arr_p[i].style.color='red'};<br>
+            </code> <br>
+            Ví dụ<br>
+            <img style="object-fit: cover;" src="IMG/demo2.png" alt="">
+            <button onclick="demo2()" class="button">Xem ví dụ</button>
+        </p>
+        <br>
+</div>
+</div>
+<div class="tbpopup" id="tbpopup-5">
+    <div class="tboverlay"></div>
+    <div class="tbcontent">
+        <div class="tbclose-btn" onclick="thongbaopopup5()">&times;</div>
+        <div style="font-size:30px;font-weight:bold">Giới thiệu tổng quan về AngularJS</div>
+        <p data-aos="fade-up" data-aos-duration="2000" class="noidung1">
+            <img src="IMG/demo3.png" style="width: 700px;" alt="">
+            <span style="line-height: 40px;"> <br>
+                1. AngularJS là một Framework được xây dựng trên nền tảng JavaScript. <br>
+                2. AngularJS hoạt động dựa trên việc bổ sung thêm các thuộc tính (attribute) cho các tag của HTML. <br>
+                3. AngularJS rất mạnh trong lập trình giao diện phía client và tổ chức ứng dụng web Single Page Application (SPA). <br>
+                4. AngularJS rất phổ biến, được rất nhiều lập trình viên ưa chuộng và sử dụng trong các project. <br>
+                5. AngularJS hoạt động uyển chuyển với các trình duyệt khác nhau <br>
+            </span> <br>
+            <b> <em> Ngoài AngularJS còn có các Framework khác như: MATERIAL-UI(React), React Bootstrap, React Suite, Chakra UI</em></b>
+        </p>
+</div>
+</div>
+</body>
+
+</html>
+<script>
+    AOS.init();
+</script>
+<script>
+    function baihoc() {
+        // window.location.replace("#baihocjs")
+        window.scroll(0,0);
+        setTimeout(() => {
+            document.getElementById('dilen').style.opacity = '0';
+        }, 10);
+    }
+    ; 
+</script>
+<script src="Bai6.js"></script>
+<script>
+    function chaylenicon() {
+        var tg = new Date;
+        var giay = tg.getSeconds();
+        giay = Number(giay);
+        if (giay % 2 == 0) {
+            document.getElementById('lenxuong').style.transform = 'translateY(10px)'
+        } else {
+            document.getElementById('lenxuong').style.transform = 'translateY(-10px)'
+        }
+        document.getElementById('lenxuong').style.transition = '1s';
+    }
+    setInterval(() => {
+        chaylenicon();
+    }, 1000);    
+</script>
+<!-- js thong bao popup -->
+<script>
+    function thongbaopopup1() {
+        document.getElementById("tbpopup-1").classList.toggle("active");
+    }
+    function thongbaopopup2() {
+        document.getElementById("tbpopup-2").classList.toggle("active");
+    }
+    function thongbaopopup3() {
+        document.getElementById("tbpopup-3").classList.toggle("active");
+    }
+    // function thongbaopopup4() {
+    //     document.getElementById("tbpopup-4").classList.toggle("active");
+    // }
+    function thongbaopopup5() {
+        document.getElementById("tbpopup-5").classList.toggle("active");
+    }
+    function demo1() {
+        setTimeout(() => {
+            alert("Hello")
+        }, 3000);
+    }
+    function demo2() {
+        window.location.replace('https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_color');
+    }
+</script>

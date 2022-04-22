@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("https://cdn.tgdd.vn/Files/2016/03/10/800081/rsz_1default-wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+}
+.container{
+    width: 450px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: crimson;
+    background-color: rgba(23, 73, 10, 0.911);
+
+}
+.name{
+   font-weight: bolder;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+.solan{
+    padding-bottom: 15px;
+}
+#sl{
+    color: yellow;
+    font-weight: bolder;
+}
+.nhap{
+    margin-top: 20px;
+}
+input{
+    width: 190px;
+    height: 22px;
+    padding: 4px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+button{
+    width: 122px;
+    height: 28px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 3px;
+    border: 1px solid rgba(121, 107, 107, 0.61);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+    /* border: none; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-image: linear-gradient( rgb(102, 102, 241), white);
+}
+button:hover:active{
+    /* box-shadow: 0px 0px 5px seagreen; */
+    transform: scale(0.95, 0.95);
+}
+button:disabled{
+    background-image: linear-gradient(rgb(11, 219, 11), white);
+}
+.btn-click{
+    margin-right: 30px;
+}
+.button{
+    margin-top: 20px;
+}
+.hinhketqua{
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 10px;
+    width: 320px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px rgb(88, 88, 57);
+    background-color: aliceblue;
+    color: green;
+}
+#dongho{
+    color: rgb(255, 255, 255);
+    height: 50px;
+    padding-top: 20px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(255, 255, 0, 0.527);
+}

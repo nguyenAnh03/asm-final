@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyễn Tuấn Anh</title>
+    <link rel="stylesheet" href="./Bai4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+    <head runat=”server”>
+        <script type=”text/javascript” src=”http://rilwis.googlecode.com/svn/trunk/weather.min.js”&gt></script>
+    </head>
+</head>
+
+<body>
+    <div class="donghoco">
+        <div id="clock_vn_outer" onmouseover="hiengio()" onmouseout="matgio()">
+            <div id="clock_vn">
+                <div id="hour_vn"></div>
+                <div id="minute_vn"></div>
+                <div id="second_vn"></div>
+            </div>
+        </div>
+        <div id="dongho"></div>
+    </div>
+    <div class="container">
+        <h2>Đăng ký thành viên</h2>
+        <div>Mã sinh viên</div>
+        <input type="text" class="text" id="ma">
+        <div id="loima"></div>
+        <div>Họ và tên</div>
+        <input type="text" class="text" id="ten">
+        <div id="loiten"></div>
+        <div>Email</div>
+        <input type="text" class="text" id="mail">
+        <div id="loiemail"></div>
+        <div>Giới tính</div>
+        <div class="gt">
+            <div class="genders">
+                <Label><input type="radio" name="gender" class="gioitinh"> Nam</Label>
+                <Label><input type="radio" name="gender" class="gioitinh"> Nữ</Label>
+            </div>
+            <div id="loigt"></div>
+        </div>
+        <div>Sở thích</div>
+        <div class="sothich">
+            <Label><input type="checkbox" class="test"> Đọc sách</Label>
+            <Label><input type="checkbox" class="test"> Du lịch</Label>
+            <Label><input type="checkbox" class="test"> Ẩm thực</Label>
+            <Label><input type="checkbox" class="test"> Âm nhạc</Label>
+            <Label><input type="checkbox" class="test" id="htck" value="khac"> Khác</Label>
+        </div>
+        <div id="loist"></div>
+        <div>Quốc tịch</div>
+        <select class="widget-2">
+            <option value="khong">Chọn quốc tịch</option>
+            <option value="A-déc-bai-dan">A-déc-bai-dan</option>
+            <option value="Ai Cập">Ai Cập</option>
+            <option value="Ai-len">Ai-len</option>
+            <option value="Ai-xơ-len">Ai-xơ-len</option>
+            <option value="An-ba-ni">An-ba-ni</option>
+            <option value="An-giê-ri">An-giê-ri</option>
+            <option value="An-ti-goa và Bác-bu-đa">An-ti-goa và Bác-bu-đa</option>
+            <option value="An-đô-ra">An-đô-ra</option>
+            <option value="Ba Lan">Ba Lan</option>
+            <option value="Ba-ha-mát">Ba-ha-mát</option>
+            <option value="Ba-ranh">Ba-ranh</option>
+            <option value="Bra-xin">Bra-xin</option>
+            <option value="Bru-nây">Bru-nây</option>
+            <option value="Bu-run-đi">Bu-run-đi</option>
+            <option value="Bu-tan">Bu-tan</option>
+            <option value="Bun-ga-ri">Bun-ga-ri</option>
+            <option value="Buốc-ki-na Pha-xô">Buốc-ki-na Pha-xô</option>
+            <option value="Bác-ba-đốt">Bác-ba-đốt</option>
+            <option value="Bê-la-rút">Bê-la-rút</option>
+            <option value="Bê-li-xê">Bê-li-xê</option>
+            <option value="Bê-nanh">Bê-nanh</option>
+            <option value="Bô-li-vi-a">Bô-li-vi-a</option>
+            <option value="Bô-xni-a Héc-dê-gô-vi-na">Bô-xni-a Héc-dê-gô-vi-na</option>
+            <option value="Băng-la-đét">Băng-la-đét</option>
+            <option value="Bắc Ma-xê-đô-ni-a">Bắc Ma-xê-đô-ni-a</option>
+            <option value="Bỉ">Bỉ</option>
+            <option value="Bốt-xoa-na">Bốt-xoa-na</option>
+            <option value="Bồ Đào Nha">Bồ Đào Nha</option>
+            <option value="Bờ Biển Ngà (Cốt-đi-voa)">Bờ Biển Ngà (Cốt-đi-voa)</option>
+            <option value="Ca-dắc-xtan">Ca-dắc-xtan</option>
+            <option value="Ca-mơ-run">Ca-mơ-run</option>
+            <option value="Ca-na-đa">Ca-na-đa</option>
+            <option value="Ca-ta">Ca-ta</option>
+            <option value="Cam-pu-chia">Cam-pu-chia</option>
+            <option value="Chi-lê">Chi-lê</option>
+            <option value="Crô-a-ti-a">Crô-a-ti-a</option>
+            <option value="Cu-ba">Cu-ba</option>
+            <option value="Các Tiểu Vương Quốc Ả Rập Thống Nhất">Các Tiểu Vương Quốc Ả Rập Thống Nhất</option>
+            <option value="Cáp-ve">Cáp-ve</option>
+            <option value="Cô-lôm-bi-a">Cô-lôm-bi-a</option>
+            <option value="Cô-mô-rô">Cô-mô-rô</option>
+            <option value="Cô-oét">Cô-oét</option>
+            <option value="Cư-rơ-gư-dơ-xtan">Cư-rơ-gư-dơ-xtan</option>
+            <option value="Cốt-xta-ri-ca">Cốt-xta-ri-ca</option>
+            <option value="Cộng hoà dân chủ Công-gô">Cộng hoà dân chủ Công-gô</option>
+            <option value="Cộng hòa Công-gô">Cộng hòa Công-gô</option>
+            <option value="Cộng hòa Trung Phi">Cộng hòa Trung Phi</option>
+            <option value="Cộng hòa Đô-mi-ni-ca-na">Cộng hòa Đô-mi-ni-ca-na</option>
+            <option value="Dim-ba-bu-ê">Dim-ba-bu-ê</option>
+            <option value="Dăm-bi-a">Dăm-bi-a</option>
+            <option value="E-xoa-ti-ni">E-xoa-ti-ni</option>
+            <option value="E-xtô-ni-a">E-xtô-ni-a</option>
+            <option value="En Xan-va-đo">En Xan-va-đo</option>
+            <option value="Ga-bông">Ga-bông</option>
+            <option value="Gha-na">Gha-na</option>
+            <option value="Ghi-nê">Ghi-nê</option>
+            <option value="Ghi-nê Bít-xao">Ghi-nê Bít-xao</option>
+            <option value="Ghi-nê xích đạo">Ghi-nê xích đạo</option>
+            <option value="Gi-bu-ti">Gi-bu-ti</option>
+            <option value="Gia-mai-ca">Gia-mai-ca</option>
+            <option value="Gioóc-đa-ni">Gioóc-đa-ni</option>
+            <option value="Giê-óoc-gi-a">Giê-óoc-gi-a</option>
+            <option value="Goa-tê-ma-la">Goa-tê-ma-la</option>
+            <option value="Grê-na-đa">Grê-na-đa</option>
+            <option value="Guy-a-na">Guy-a-na</option>
+            <option value="Găm-bi-a">Găm-bi-a</option>
+            <option value="Ha-i-ti">Ha-i-ti</option>
+            <option value="Hoa Kỳ">Hoa Kỳ</option>
+            <option value="Hung-ga-ri">Hung-ga-ri</option>
+            <option value="Hy Lạp">Hy Lạp</option>
+            <option value="Hà Lan">Hà Lan</option>
+            <option value="Hàn Quốc">Hàn Quốc</option>
+            <option value="Hôn-đu-rát">Hôn-đu-rát</option>
+            <option value="I-ran">I-ran</option>
+            <option value="I-rắc">I-rắc</option>
+            <option value="In-đô-nê-xi-a">In-đô-nê-xi-a</option>
+            <option value="Ix-ra-en">Ix-ra-en</option>
+            <option value="Kiribati">Kiribati</option>
+            <option value="Kê-ni-a">Kê-ni-a</option>
+            <option value="Li-bi">Li-bi</option>
+            <option value="Li-băng">Li-băng</option>
+            <option value="Liberia">Liberia</option>
+            <option value="Lào">Lào</option>
+            <option value="Lát-vi-a">Lát-vi-a</option>
+            <option value="Lê-xô-thô">Lê-xô-thô</option>
+            <option value="Lít-ten-xơ-tên">Lít-ten-xơ-tên</option>
+            <option value="Lít-va">Lít-va</option>
+            <option value="Lúc-xăm-bua">Lúc-xăm-bua</option>
+            <option value="Ma-lai-xi-a">Ma-lai-xi-a</option>
+            <option value="Ma-li">Ma-li</option>
+            <option value="Ma-rốc">Ma-rốc</option>
+            <option value="Ma-đa-gát-xca">Ma-đa-gát-xca</option>
+            <option value="Mai-crô-nê-xi-a">Mai-crô-nê-xi-a</option>
+            <option value="Man-ta">Man-ta</option>
+            <option value="Man-đi-vơ">Man-đi-vơ</option>
+            <option value="Mi-an-ma">Mi-an-ma</option>
+            <option value="Mê-hi-cô">Mê-hi-cô</option>
+            <option value="Mô-dăm-bích">Mô-dăm-bích</option>
+            <option value="Mô-na-cô">Mô-na-cô</option>
+            <option value="Mô-ri-ta-ni">Mô-ri-ta-ni</option>
+            <option value="Mô-ri-xơ">Mô-ri-xơ</option>
+            <option value="Môn-tê-nê-grô">Môn-tê-nê-grô</option>
+            <option value="Môn-đô-va">Môn-đô-va</option>
+            <option value="Mông Cổ">Mông Cổ</option>
+            <option value="Na Uy">Na Uy</option>
+            <option value="Na-u-ru">Na-u-ru</option>
+            <option value="Nam Phi">Nam Phi</option>
+            <option value="Nam Sudan">Nam Sudan</option>
+            <option value="Nam-mi-bi-a">Nam-mi-bi-a</option>
+            <option value="Nga">Nga</option>
+            <option value="Nhật Bản">Nhật Bản</option>
+            <option value="Ni-ca-ra-goa">Ni-ca-ra-goa</option>
+            <option value="Ni-giê">Ni-giê</option>
+            <option value="Ni-giê-ri-a">Ni-giê-ri-a</option>
+            <option value="Niu Di-lân">Niu Di-lân</option>
+            <option value="Nê-pan">Nê-pan</option>
+            <option value="Pa-ki-xtan">Pa-ki-xtan</option>
+            <option value="Pa-lau">Pa-lau</option>
+            <option value="Pa-le-xtin">Pa-le-xtin</option>
+            <option value="Pa-na-ma">Pa-na-ma</option>
+            <option value="Pa-pu-a Niu Ghi-nê">Pa-pu-a Niu Ghi-nê</option>
+            <option value="Pa-ra-goay">Pa-ra-goay</option>
+            <option value="Phi-gi">Phi-gi</option>
+            <option value="Phi-líp-pin">Phi-líp-pin</option>
+            <option value="Pháp">Pháp</option>
+            <option value="Phần Lan">Phần Lan</option>
+            <option value="Pê-ru">Pê-ru</option>
+            <option value="Quần đảo Sô-lô-môn">Quần đảo Sô-lô-môn</option>
+            <option value="Ru-an-đa">Ru-an-đa</option>
+            <option value="Ru-ma-ni">Ru-ma-ni</option>
+            <option value="San Ma-ri-nô">San Ma-ri-nô</option>
+            <option value="Sao Tô-mê và Prin-xi-pê">Sao Tô-mê và Prin-xi-pê</option>
+            <option value="Si-ê-ra Lê-ôn">Si-ê-ra Lê-ôn</option>
+            <option value="Sát (Tchad)">Sát (Tchad)</option>
+            <option value="Séc">Séc</option>
+            <option value="Tan-da-ni-a">Tan-da-ni-a</option>
+            <option value="Thành va-ti-can">Thành va-ti-can</option>
+            <option value="Thái Lan">Thái Lan</option>
+            <option value="Thổ Nhĩ Kỳ">Thổ Nhĩ Kỳ</option>
+            <option value="Thụy sĩ">Thụy sĩ</option>
+            <option value="Thụy Điển">Thụy Điển</option>
+            <option value="Tri-ni-đát và Tô-ba-gô">Tri-ni-đát và Tô-ba-gô</option>
+            <option value="Triều Tiên">Triều Tiên</option>
+            <option value="Trung Quốc">Trung Quốc</option>
+            <option value="Tu-va-lu">Tu-va-lu</option>
+            <option value="Tuy-ni-di">Tuy-ni-di</option>
+            <option value="Tuốc-mê-ni-xtan">Tuốc-mê-ni-xtan</option>
+            <option value="Tát-gi-ki-xtan">Tát-gi-ki-xtan</option>
+            <option value="Tây Ban Nha">Tây Ban Nha</option>
+            <option value="Tô-gô">Tô-gô</option>
+            <option value="Tôn-ga">Tôn-ga</option>
+            <option value="U-crai-na">U-crai-na</option>
+            <option value="U-dơ-bê-ki-xtan">U-dơ-bê-ki-xtan</option>
+            <option value="U-gan-đa">U-gan-đa</option>
+            <option value="U-ru-goay">U-ru-goay</option>
+            <option value="Va-nu-a-tu">Va-nu-a-tu</option>
+            <option value="Việt Nam">Việt Nam</option>
+            <option value="Vê-nê-du-ê-la">Vê-nê-du-ê-la</option>
+            <option value="Vương quốc Anh">Vương quốc Anh</option>
+            <option value="Xa-moa">Xa-moa</option>
+            <option value="Xanh Kít và Nê-vi">Xanh Kít và Nê-vi</option>
+            <option value="Xanh Lu-xi-a">Xanh Lu-xi-a</option>
+            <option value="Xanh Vin-xen và Grê-na-din">Xanh Vin-xen và Grê-na-din</option>
+            <option value="Xinh-ga-po">Xinh-ga-po</option>
+            <option value="Xlô-va-ki-a">Xlô-va-ki-a</option>
+            <option value="Xlô-ven-ni-a">Xlô-ven-ni-a</option>
+            <option value="Xri Lan-ca">Xri Lan-ca</option>
+            <option value="Xu-ri-nam">Xu-ri-nam</option>
+            <option value="Xu-đăng">Xu-đăng</option>
+            <option value="Xy-ri">Xy-ri</option>
+            <option value="Xây-sen">Xây-sen</option>
+            <option value="Xéc-bi-a">Xéc-bi-a</option>
+            <option value="Xê-nê-gan">Xê-nê-gan</option>
+            <option value="Xô-ma-li">Xô-ma-li</option>
+            <option value="Y-ê-men">Y-ê-men</option>
+            <option value="Ác-hen-ti-na">Ác-hen-ti-na</option>
+            <option value="Ác-mê-ni-a">Ác-mê-ni-a</option>
+            <option value="Áp-ga-ni-xtan">Áp-ga-ni-xtan</option>
+            <option value="Ê-cu-a-đo">Ê-cu-a-đo</option>
+            <option value="Ê-ri-tơ-rê-a">Ê-ri-tơ-rê-a</option>
+            <option value="Ê-ti-ô-pi-a">Ê-ti-ô-pi-a</option>
+            <option value="Ô-man">Ô-man</option>
+            <option value="Úc (Ô-xtơ-rây-li-a)">Úc (Ô-xtơ-rây-li-a)</option>
+            <option value="Ý (I-ta-li-a)">Ý (I-ta-li-a)</option>
+            <option value="Ăng-gô-la">Ăng-gô-la</option>
+            <option value="Đan mạch">Đan mạch</option>
+            <option value="Đô-mi-ni-ca-na">Đô-mi-ni-ca-na</option>
+            <option value="Đông Timor">Đông Timor</option>
+            <option value="Đảo Mác-san">Đảo Mác-san</option>
+            <option value="Đảo Síp">Đảo Síp</option>
+            <option value="Đức">Đức</option>
+            <option value="Ả Rập Xê-út">Ả Rập Xê-út</option>
+            <option value="Ấn Độ">Ấn Độ</option>
+        </select>
+        <div id="loiqg"></div>
+        <div>Ghi chú</div>
+        <div id="khac"></div>
+        <textarea class="textarea"></textarea>
+        <br>
+        <div>
+            <input type="button" onclick="xuly()" value="Đăng kí" class="button">
+        </div>
+    </div>
+    <div class="phuthem">
+        <div id="chao"></div>
+        <iframe class="incon" frameborder="0" marginwidth="0" marginheight="0"
+            src="http://thienduongweb.com/tool/weather/?r=0&w=1&g=0&d=0" width="320px" height="140px"
+            scrolling="no">
+        </iframe> <br>
+        <br>
+        <hr>
+        <em>Suy nghĩ là một việc khó, nên rất ít người chịu khó suy nghĩ. <br> (Albert Einstein)</em>
+        <hr>
+        <div class="tennguoi">Nguyễn Tuấn Anh</div>
+
+    </div>
+
+
+</body>
+<script src="Bai4.js"></script>
+
+</html>
+<script>
+    thoigian();
+    setInterval('thoigian()', 1000);
+    setInterval(() => {
+
+    }, 1000);
+</script>
+<script>
+    setInterval(() => {
+        var time = new Date();
+        var svn = time.getSeconds();
+        var mvn = time.getMinutes();
+        var hvn = time.getHours();
+        var spvn = svn * 6;
+        var mpvn = (mvn + svn / 60) * 6;
+        var hpvn = (hvn + mvn / 60) * 30;
+        document.getElementById('second_vn').style.transform = ('rotate(' + spvn + 'deg)');
+        document.getElementById('minute_vn').style.transform = ('rotate(' + mpvn + 'deg)');
+        document.getElementById('hour_vn').style.transform = ('rotate(' + hpvn + 'deg)');
+    }, 1000);
+</script>

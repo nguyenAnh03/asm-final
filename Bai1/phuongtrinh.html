@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Tuấn Anh</title>
+    <link rel="stylesheet" href="phuongtrinh.css">
+</head>
+<body>
+    <div class="container">
+        <div class="name">GIẢI PHƯƠNG TRÌNH  <span id="a"></span>x<sup>2</sup> + <span id="b"></span>x + <span id="c"></span> = 0</div>
+        <div class="solan">Số lần giải <span id="sl"></span></div>
+        <hr>
+            
+        <form>
+            <div class="nhap">
+                <label>Nhập số a: </label><input onkeyup="inputChangekey();"  onchange="Change()" id="input1" placeholder="Nhập a" >
+            </div>
+            <div class="nhap">
+                <label>Nhập số b: </label><input onkeyup="inputChangekey();" onchange="Change()" id="input2"  placeholder="Nhập b" >
+            </div>
+            <div class="nhap">
+                <label>Nhập số c: </label><input onkeyup="inputChangekey();" onchange="Change()" id="input3"  placeholder="Nhập c" >
+            </div>
+            <div class="button">
+                <button id="" onclick="ptb2.giai()" class="btn-click">Giai Pt</button>
+                <button type="button" id="nutchoso" onclick="choso()">Cho số</button>
+            </div>
+            
+        </form>
+        <div class="hinhketqua">
+            <div id="kq"></div>
+        </div>
+       <div id="dongho"></div>
+
+    </div>
+    <script src="./phuongtrinh.js" ></script>
+</body>
+</html>
+<script>
+    var info;
+    thoigian();
+    setInterval('thoigian()',1000);
+</script>
+<script>
+  var action=setInterval(function(){
+  var time=new Date();   
+  var svn=time.getSeconds();
+  var mvn=time.getMinutes();
+  var hvn=time.getHours();
+  var spvn=svn*6;
+  var mpvn=(mvn+svn/60)*6;
+  var hpvn=(hvn+mvn/60)*30;
+  $('#second_vn').css('transform','rotate('+spvn+'deg)');
+  $('#minute_vn').css('transform','rotate('+mpvn+'deg)');
+  $('#hour_vn').css('transform','rotate('+hpvn+'deg)');
+},1000)
+</script>
